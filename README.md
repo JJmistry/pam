@@ -2,7 +2,7 @@
 PAM provides a way to automatically test Python hangman games. This was created to enable a Python course that does not have time to mark a test at the end of the course to use this for automatic marking.
 
 ## Student instructions
-Your assignment is to code, in Python 3, a game of hangman. Specifically the program should choose a word from a predefined bank of words (word_list.txt), and display to the user how many letters the word is (i.e. " ******** ". The user should then be able to guess one letter at a time, with the program either taking a "life" from them if it is an incorrect guess, or showing that the letter is correct and where it appears in the word (i.e. ***a**a*). The game ends when the user runs out of guesses (7 incorrect guesses) or the player has filled in all the letters of the word. The code should be submitted as a file (Please name it in the convention "Surname_Initial_Hangman.py"). We expect completion of the project for a beginner to take around 10-20 hours. The solution can easily found on google - PLEASE try to figure it out on your own - even if that just includes sketching the logic of creating the solution, then looking for help later - you will be doing yourself a lot of favours in the long-run!
+Your assignment is to code, in Python 3, a game of hangman. Specifically the program should choose a word from a predefined bank of words (word_list.txt is provided in this repository), and display to the user how many letters the word is (i.e. " ******** ". The user should then be able to guess one letter at a time, with the program either taking a "life" from them if it is an incorrect guess, or showing that the letter is correct and where it appears in the word (i.e. ***a**a*). The game ends when the user runs out of guesses (7 incorrect guesses) or the player has filled in all the letters of the word. The code should be submitted as a file (Please name it in the convention "Surname_Initial_Hangman.py"). We expect completion of the project for a beginner to take around 10-20 hours. The solution can easily found on google - PLEASE try to figure it out on your own - even if that just includes sketching the logic of creating the solution, then looking for help later - you will be doing yourself a lot of favours in the long-run!
 
 We require that the program you write does some things in a very specific way so please follow the following bullet points to the letter otherwise your program will be automatically failed.
 - The program must run in Python3 without error.
@@ -10,8 +10,9 @@ We require that the program you write does some things in a very specific way so
 - Asking the user to make her next guess must use the following text (case sensitive and a space after the colon necessary (I think)): `Please enter your next guess: `
 - The text printed before `Please enter your next guess: ` must END in the word to be guessed with the unknown letters starred out (i.e. hello would start as ***** and change into *e*** after ‘e’ was guessed). The string must not contain any other stars.
 The program must print either `congratulations you win` or `you lose` on exit (not case sensitive).
-When a game is played, a word must be picked randomly (from a uniform distribution) from the word_list.txt file.
-If the user makes 7 wrong guesses then they lose the game.
+ - When a game is played, a word must be picked randomly (from a uniform distribution) from the word_list.txt file provided in this repository.
+ - The word_list.txt file must be stored locally and when you load the file you don't include the path (i.e. `open('word_file.txt...`)
+ - If the user makes 7 wrong guesses then they lose the game.
 
 ## Running automatic tests
 There are two ways to test students submissions. The first is strongly preferable because second won’t do analysis.
