@@ -11,7 +11,7 @@ We require that the program you write does some things in a very specific way so
 - The text printed before `Please enter your next guess: ` must END in the word to be guessed with the unknown letters starred out (i.e. hello would start as ***** and change into *e*** after ‘e’ was guessed). The string must not contain any other stars.
 The program must print either `congratulations you win` or `you lose` on exit (not case sensitive).
  - When a game is played, a word must be picked randomly (from a uniform distribution) from the word_list.txt file provided in this repository.
- - The word_list.txt file must be stored locally and when you load the file you don't include the path (i.e. `open('word_file.txt...`)
+ - The word_list.txt file must be stored locally and when you load the file you don't include the path (i.e. `open('word_file.txt', ...)`).
  - If the user makes 7 wrong guesses then they lose the game.
 
 ## Running automatic tests
